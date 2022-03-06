@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "motokobootcamp_day2": {
+      "main": "src/motokobootcamp_day2/main.mo",
+      "type": "motoko"
+    },
+    "motokobootcamp_day2_assets": {
+      "dependencies": [
+        "motokobootcamp_day2"
+      ],
+      "frontend": {
+        "entrypoint": "src/motokobootcamp_day2_assets/src/index.html"
+      },
+      "source": [
+        "src/motokobootcamp_day2_assets/assets",
+        "dist/motokobootcamp_day2_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.2",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
